@@ -24,7 +24,16 @@ namespace Administrador_Municipalidad
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text == "admin" && textBox2.Text == "12345")
+            {
+                MessageBox.Show("Bienvenido Administrador");
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Clave incorrecta");
+                textBox1.Clear();
+                textBox2.Clear();
+            }
         }
     }
 }
