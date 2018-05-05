@@ -27,6 +27,7 @@ namespace Administrador_Municipalidad
             if (textBox1.Text == "admin" && textBox2.Text == "12345")
             {
                 MessageBox.Show("Bienvenido Administrador");
+
             }
             else
             {
@@ -34,6 +35,11 @@ namespace Administrador_Municipalidad
                 textBox1.Clear();
                 textBox2.Clear();
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
